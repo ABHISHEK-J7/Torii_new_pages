@@ -14,7 +14,11 @@ export function Logo({ className }) {
       className={cn("group inline-flex items-center", className)}
     >
       <Image
-        src="/logo.png"
+        // next/image does NOT auto-prepend basePath to a string src, so we
+        // include it explicitly. The app is served under /placement-trainings
+        // (see basePath in next.config.mjs); public/logo.png is therefore
+        // served at /placement-trainings/logo.png.
+        src="/placement-trainings/logo.png"
         alt="Torii Minds"
         width={794}
         height={256}
