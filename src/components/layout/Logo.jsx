@@ -2,46 +2,63 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 /**
- * Torii Minds wordmark with a minimal torii-gate glyph.
- * Inline SVG keeps it crisp at any size and recolours with the theme.
+ * Torii Minds "Step IN, Stand OUT" mark — an open gate with an asterisk and
+ * IN / OUT legs. Inline SVG keeps it crisp at any size and recolours with the
+ * brand token.
  */
 export function Logo({ className }) {
   return (
     <Link
       href="/"
-      aria-label="Torii Minds — Home"
+      aria-label="Torii Minds — Step IN, Stand OUT"
       className={cn(
         "group inline-flex items-center gap-2.5 font-bold tracking-tight",
         className,
       )}
     >
       <svg
-        width="26"
-        height="26"
-        viewBox="0 0 24 24"
+        width="42"
+        height="34"
+        viewBox="0 0 60 48"
         fill="none"
         aria-hidden="true"
         className="text-brand transition-transform duration-300 group-hover:-translate-y-0.5"
       >
-        {/* Torii gate */}
+        {/* Gate: ⊓ shape (two legs + top bar) */}
         <path
-          d="M3 6.5c3-1.2 15-1.2 18 0"
+          d="M12 34 V12 H48 V34"
           stroke="currentColor"
-          strokeWidth="2"
+          strokeWidth="4.5"
           strokeLinecap="round"
+          strokeLinejoin="round"
         />
-        <path
-          d="M4 9.5h16"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-        <path
-          d="M6.5 9.5V20M17.5 9.5V20"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
+        {/* Asterisk inside the gate */}
+        <g stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+          <path d="M30 15 V23" />
+          <path d="M26.5 16.8 L33.5 21.2" />
+          <path d="M33.5 16.8 L26.5 21.2" />
+        </g>
+        {/* IN / OUT under the legs */}
+        <text
+          x="14"
+          y="45"
+          textAnchor="middle"
+          fontSize="8"
+          fontWeight="600"
+          fill="currentColor"
+        >
+          IN
+        </text>
+        <text
+          x="46"
+          y="45"
+          textAnchor="middle"
+          fontSize="8"
+          fontWeight="600"
+          fill="currentColor"
+        >
+          OUT
+        </text>
       </svg>
       <span className="text-lg text-foreground">
         Torii<span className="text-brand">Minds</span>
