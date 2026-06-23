@@ -12,16 +12,17 @@ export function Logo({ className }) {
       href="/"
       aria-label="Torii Minds — Step IN, Stand OUT"
       className={cn(
-        "group inline-flex items-center gap-2.5 font-bold tracking-tight",
+        "group inline-flex items-center",
         className,
       )}
     >
       <svg
-        width="42"
-        height="34"
+        width="56"
+        height="45"
         viewBox="0 0 60 48"
         fill="none"
-        aria-hidden="true"
+        role="img"
+        aria-label="Torii Minds"
         className="text-brand transition-transform duration-300 group-hover:-translate-y-0.5"
       >
         {/* Gate: ⊓ shape (two legs + top bar) */}
@@ -60,9 +61,6 @@ export function Logo({ className }) {
           OUT
         </text>
       </svg>
-      <span className="text-lg text-foreground">
-        Torii<span className="text-brand">Minds</span>
-      </span>
     </Link>
   );
 }
