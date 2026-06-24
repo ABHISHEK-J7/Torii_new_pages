@@ -10,7 +10,6 @@
  * @typedef {Object} TimetableSlot
  * @property {string} time
  * @property {string} activity
- * @property {string} [trainers]
  *
  * @typedef {Object} Timetable
  * @property {string} batch
@@ -65,20 +64,20 @@ const ASSESSMENTS = [
 
 /** Placement Training Batch 1 daily timetable. */
 const PLACEMENT_BATCH1_SLOTS = [
-  { time: "9:00 AM – 9:30 AM", activity: COMM_SKILLS, trainers: "Harshavardhini, Harika" },
-  { time: "9:30 AM – 10:30 AM", activity: "SQL", trainers: "Harshavardhini, Harika" },
-  { time: "10:30 AM – 12:00 PM", activity: "Aptitude", trainers: "Naveen, Karthik" },
-  { time: "12:00 PM – 1:00 PM", activity: "Lunch", trainers: "" },
-  { time: "1:00 PM – 4:00 PM", activity: "Coding", trainers: "Sudhir, Chaitanya, Rahul" },
+  { time: "9:00 AM – 9:30 AM", activity: COMM_SKILLS },
+  { time: "9:30 AM – 10:30 AM", activity: "SQL" },
+  { time: "10:30 AM – 12:00 PM", activity: "Aptitude" },
+  { time: "12:00 PM – 1:00 PM", activity: "Lunch" },
+  { time: "1:00 PM – 4:00 PM", activity: "Coding" },
 ];
 
 /** Placement Training Batch 2 daily timetable. */
 const PLACEMENT_BATCH2_SLOTS = [
-  { time: "9:00 AM – 10:30 AM", activity: "Aptitude", trainers: "Naveen, Karthik" },
-  { time: "10:30 AM – 11:00 AM", activity: COMM_SKILLS, trainers: "Abraham, Vinit" },
-  { time: "11:00 AM – 12:00 PM", activity: "SQL", trainers: "Abraham, Vinit" },
-  { time: "12:00 PM – 1:00 PM", activity: "Lunch", trainers: "" },
-  { time: "1:00 PM – 4:00 PM", activity: "Coding", trainers: "Abraham, Vinit" },
+  { time: "9:00 AM – 10:30 AM", activity: "Aptitude" },
+  { time: "10:30 AM – 11:00 AM", activity: COMM_SKILLS },
+  { time: "11:00 AM – 12:00 PM", activity: "SQL" },
+  { time: "12:00 PM – 1:00 PM", activity: "Lunch" },
+  { time: "1:00 PM – 4:00 PM", activity: "Coding" },
 ];
 
 /** Placement Training day-wise syllabus — shared by both batches. */
@@ -112,12 +111,12 @@ export const programs = [
       {
         batch: "AI Ready Engineer",
         slots: [
-          { time: "9:00 AM – 11:00 AM", activity: "Coding", trainers: "Bhargav, Rahul, Suneeta" },
-          { time: "11:00 AM – 12:00 PM", activity: "AI", trainers: "Abhishek, Azar" },
-          { time: "12:00 PM – 1:00 PM", activity: "Lunch", trainers: "" },
-          { time: "1:00 PM – 1:30 PM", activity: COMM_SKILLS, trainers: "Harshavardhini, Harika" },
-          { time: "1:30 PM – 2:30 PM", activity: "SQL", trainers: "Harshavardhini, Harika" },
-          { time: "2:30 PM – 4:00 PM", activity: "Aptitude", trainers: "Naveen, Karthik" },
+          { time: "9:00 AM – 11:00 AM", activity: "Coding" },
+          { time: "11:00 AM – 12:00 PM", activity: "AI" },
+          { time: "12:00 PM – 1:00 PM", activity: "Lunch" },
+          { time: "1:00 PM – 1:30 PM", activity: COMM_SKILLS },
+          { time: "1:30 PM – 2:30 PM", activity: "SQL" },
+          { time: "2:30 PM – 4:00 PM", activity: "Aptitude" },
         ],
       },
     ],
