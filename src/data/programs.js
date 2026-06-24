@@ -50,7 +50,7 @@ const ASSESSMENTS = [
   },
   {
     title: "Daily Test",
-    timing: "9:00 AM – 9:30 AM, every day",
+    timing: "30 min, every day",
     description:
       "A 30-minute test held at the start of the day, before classes begin, to reinforce the previous day's learning across the tracks.",
   },

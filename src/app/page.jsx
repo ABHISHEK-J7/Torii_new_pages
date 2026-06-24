@@ -89,7 +89,7 @@ export default function HomePage() {
             { label: "Programs", value: programs.length },
             { label: "Training days", value: 12 },
             { label: "Participants", value: totalParticipants },
-            { label: "Daily tests", value: "9 – 9:30 AM" },
+            { label: "Daily tests", value: "30 min" },
           ].map((s) => (
             <Card key={s.label} className="p-5 text-center">
               <p className="text-2xl font-bold text-foreground sm:text-3xl">{s.value}</p>

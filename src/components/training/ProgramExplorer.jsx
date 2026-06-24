@@ -109,7 +109,7 @@ export function ProgramExplorer({ programs, initialSlug }) {
             <dl className="space-y-2 text-sm">
               {[
                 { label: "Duration", value: `${program.durationDays} days` },
-                { label: "Daily Test", value: "9–9:30 AM" },
+                { label: "Daily Test", value: "30 min" },
                 { label: "Pre-Assessment", value: "Day 1" },
                 { label: "Grand Test", value: "6th & 12th days" },
               ].map((fact) => (

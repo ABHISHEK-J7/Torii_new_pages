@@ -46,7 +46,7 @@ export default function TrainingPage({ searchParams }) {
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
             A journey across aptitude, coding, and applied AI — with a daily
-            timetable and a 30-minute daily test from 9:00 to 9:30 AM. Switch tracks below to
+            timetable and a 30-minute daily test. Switch tracks below to
             see each curriculum in full.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
